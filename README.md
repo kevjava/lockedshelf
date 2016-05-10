@@ -52,7 +52,7 @@ serializer which encrypts/decrypts and deals with the keystore.
 
 ## Notes
 
-1. The user's device must be secured.  
+#### The user's device must be secured.  
 The device must have a PIN, password, pattern lock, or a fingerprint set up to lock the device. 
 This mechanism is what unlocks the keystore that secures the AES keys.
 
@@ -64,13 +64,12 @@ the Android Keystore.
     * `ensureKeyguardIsUnlocked()` - Will check to make sure the keyguard is open, or will prompt 
     the user to unlock it and restart your activity with an OK or CANCEL result.
 
-2. Uninstalling the application destroys the encryption keys.
+#### Uninstalling the application destroys the encryption keys.
 All encryption keys for the app are removed if the user uninstalls an application that uses the 
-keystore.  Of course, since your objects are being stored in the cache directory of the application,
-those will be gone too, so no biggy, right?  For this reason, this should be used for things like 
-cache, and probably isn't good for important data you want to keep around.
-
-3. 
+keystore.  Of course, by default, since your objects are being stored in the cache directory of the 
+application, those will be gone too, so no biggy, right?  For this reason, this should be used for 
+things like cache, and probably isn't good for important data you want to keep around after the app 
+goes away.
 
 ## How to use it
 
