@@ -18,6 +18,22 @@ android {
     }
 }
 
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'lockedshelf'
+
+    publishedGroupId = 'com.kevinja.lockedshelf'
+    libraryName = 'LockedShelf'
+    artifact = 'lockedshelf'
+
+    libraryDescription = 'Android encrypted caching library.'
+    libraryVersion = '1.1.0'
+
+    developerId = 'kevjava'
+    developerName = 'Kevin Wallace'
+    developerEmail = 'kevjava@gmail.com'
+}
+
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.toddway:shelf:1.1.0'
@@ -25,3 +41,6 @@ dependencies {
     compile 'com.madgag.spongycastle:core:1.54.0.0'
     testCompile 'junit:junit:4.12'
 }
+
+apply from: 'https://raw.githubusercontent.com/attwellBrian/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/attwellBrian/JCenter/master/bintrayv1.gradle'

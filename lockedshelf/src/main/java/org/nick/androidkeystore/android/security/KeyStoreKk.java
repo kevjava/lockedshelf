@@ -27,7 +27,7 @@ import java.lang.reflect.Method;
 import java.util.Locale;
 
 /**
- * @hide This should not be made public in its present form because it
+ * This should not be made public in its present form because it
  * assumes that private and secret key bytes are available and would
  * preclude the use of hardware crypto.
  */

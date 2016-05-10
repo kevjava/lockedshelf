@@ -26,7 +26,6 @@ import android.os.RemoteException;
  * This must be kept manually in sync with system/security/keystore until AIDL
  * can generate both Java and C++ bindings.
  * 
- * @hide
  */
 public interface IKeystoreService extends IInterface {
     public static abstract class Stub extends Binder implements IKeystoreService {
