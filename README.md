@@ -59,11 +59,11 @@ This mechanism is what unlocks the keystore that secures the AES keys.
 To that end, a `KeyStoreUtil` class is provided which has some convenience methods for dealing with 
 the Android Keystore.
 
-    * `isDeviceSecure()` - returns true if the device has a secure keyguard and we're go for 
-    encryption.
-    * `isKeystoreReady()` - returns true if the keystore is unlocked and ready to use. 
-    * `ensureKeyguardIsUnlocked()` - Will check to make sure the keyguard is open, or will prompt 
-    the user to unlock it and restart your activity with an OK or CANCEL result.
+ * `isDeviceSecure()` - returns true if the device has a secure keyguard and we're go for 
+encryption.
+ * `isKeystoreReady()` - returns true if the keystore is unlocked and ready to use. 
+ * `ensureKeyguardIsUnlocked()` - Will check to make sure the keyguard is open, or will prompt 
+the user to unlock it and restart your activity with an OK or CANCEL result.
 
 #### Uninstalling the application destroys the encryption keys.
 All encryption keys for the app are removed if the user uninstalls an application that uses the 
