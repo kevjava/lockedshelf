@@ -58,6 +58,7 @@ This mechanism is what unlocks the keystore that secures the AES keys.
 
 To that end, a `KeyStoreUtil` class is provided which has some convenience methods for dealing with 
 the Android Keystore.
+
     * `isDeviceSecure()` - returns true if the device has a secure keyguard and we're go for 
     encryption.
     * `isKeystoreReady()` - returns true if the keystore is unlocked and ready to use. 
