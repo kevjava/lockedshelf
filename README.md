@@ -18,16 +18,14 @@ A builder is provided to create a local "locked" shelf, given an Android context
             .build();
 ```
 
-The `id` is the alias of the key in the Android keystore.  This allows for separate keys to be used
+  * The `id` is the alias of the key in the Android keystore.  This allows for separate keys to be used
 to encrypt potentially sensitive object(s), if perhaps multiple users can log into your application, 
 or if you just want to use separate keys for separate pieces of data.
-
-The `setGenerateKeyIfNotFound()` method will tell the locked shelf to create a brand new symmetric 
+  * The `setGenerateKeyIfNotFound()` method will tell the locked shelf to create a brand new symmetric 
 AES key and store it in the keystore, if the specified key doesn't exist in the device's keystore.  
 If there is a setup process for your application's user, you should set the flag there, and depend 
 on the key being there for future uses.  
-
-The default lifetime of a shelf object is how long the cache should be used before attempting to 
+  * The default lifetime of a shelf object is how long the cache should be used before attempting to 
 fetch again. 
 
 To store an object, just create a `ShelfItem` with its own shelf key, and "put" an object there:
@@ -74,7 +72,7 @@ application, those will be gone on uninstall too, so no biggy, right?  For this 
 be used for things like cache, and probably isn't good for important data you want to keep around 
 after the app goes away.
 
-## How to use it
+## How to get it
 
 You can import this repository as a module in Android Studio, or if you're using Gradle, it's dead 
 simple:
