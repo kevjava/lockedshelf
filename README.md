@@ -65,12 +65,14 @@ encryption.
  * `ensureKeyguardIsUnlocked()` - Will check to make sure the keyguard is open, or will prompt 
 the user to unlock it and restart your activity with an OK or CANCEL result.
 
-#### Uninstalling the application destroys the encryption keys.
+#### Uninstalling the application or turning off device security destroys the encryption keys.
 All encryption keys for the app are removed if the user uninstalls an application that uses the 
-keystore.  Of course, by default, since your objects are being stored in the cache directory of the 
-application, those will be gone too, so no biggy, right?  For this reason, this should be used for 
-things like cache, and probably isn't good for important data you want to keep around after the app 
-goes away.
+keystore, or turns off the PIN/password/pattern/fingerprint lock.  
+
+Of course, by default, since your objects are being stored in the cache directory of the 
+application, those will be gone on uninstall too, so no biggy, right?  For this reason, this should 
+be used for things like cache, and probably isn't good for important data you want to keep around 
+after the app goes away.
 
 ## How to use it
 
