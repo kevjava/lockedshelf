@@ -47,8 +47,8 @@ To fetch it later, get the `ShelfItem` and "get" it, telling the Shelf which cla
 ```
 
 There is much more to it, though - Todd's library is configurable and customizable, and includes 
-hooks for RxJava to do your loading in a background thread.  This library just adds a custom 
-serializer which encrypts/decrypts and deals with the keystore.
+hooks for RxJava to do your loading in a background thread, among other things.  This library just 
+adds a custom serializer which encrypts/decrypts and deals with the keystore.
 
 ## Notes
 
