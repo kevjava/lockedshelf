@@ -72,6 +72,12 @@ application, those will be gone on uninstall too, so no biggy, right?  For this 
 be used for things like cache, and probably isn't good for important data you want to keep around 
 after the app goes away.
 
+#### I have only personally tested this on Nexus devices.  
+This library has functioned properly after my manual testing on some Nexus devices, but there are 
+many devices I haven't tested with.  Your mileage may vary, so kick the tires a little and make sure
+it doesn't delete your files or shave your cat.  
+[Let me know](https://github.com/kevjava/lockedshelf/issues) if you run into trouble.  
+
 ## How to get it
 
 You can import this repository as a module in Android Studio, or if you're using Gradle, it's dead 
